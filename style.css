@@ -1,0 +1,728 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:helvetica;
+}
+
+.contenedor-padre{
+    width: 100%;
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    background-color: #fff;
+    position: fixed;
+    z-index: 100;
+
+}
+.contenedor-hijo-1{
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    width: 24%;
+    height: 40px;
+    align-items: center;
+    position: fixed;
+    
+}
+.contenedor-hijo-1 input{
+    width: 76%;
+    height: 35px;
+    border-radius: 20px;
+    padding-left: 30px;
+    font-size: 16px;
+    background-color: #E9EBEE;
+    border: solid #E9EBEE 1px;
+}
+.contenedor-hijo-1 .icon{
+    position: absolute;
+    left: 10px;
+    color: #000;
+    font-size: 16px;
+}
+.contenedor-hijo-2{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color:#FFF;
+    position: fixed;
+    margin-left: 24%;
+}
+.contenedor-hijo-2 i{
+    font-size:22px;
+    cursor: pointer;
+    color: #666666;
+    padding: 10px 50px;
+}
+#home{
+    color: blue;
+}
+.contenedor-hijo-3{
+    background-color: #FFF;
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    padding: 0 15px;
+    position: fixed;
+    margin-left: 80%;
+}
+.contenedor-hijo-3 i{
+    background-color: #E9EBEE;
+    color:#000;
+    font-size: 18px;
+    padding: 9px;
+    margin: 0 3px;
+    border: solid #E9EBEE 2px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.contenedor-hijo-3 img{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin: 0 3px; 
+}
+
+.seccion-padre{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.seccion-1{
+    width: 22%;
+    height: 650px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: #E9EBEE;
+    position: fixed;
+    margin-top: 56px;
+}
+.seccion-1:hover{
+    overflow: auto;
+}
+.seccion-1 a{
+    margin: 14px;
+    color:  #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+.nombre{
+    padding: 10px 0 0 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.nombre img{
+    border-radius: 20px;
+}
+.opcion{
+    padding: 25px 0 0 15px;
+}
+#amigos{
+    color: blue;
+}
+#guardado{
+    color: #8A2BE2;
+}
+#actividad, #recuerdos, #grupos, #administrador{
+    color: blue;
+}
+#centro{
+    color: #2777B5;
+}
+#clima{
+    color: #FFD700;
+}
+#eventos{
+    color:#FF4500;
+}
+#feeds, #jugar, #marketplace{
+    color: blue;
+}
+
+.seccion-2{
+    width: 56%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    background-color: #E9EBEE;
+    margin-left: 22%;
+    margin-top: 56px;
+}
+.seccion-2-hija{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.crear-historia{
+    background-image: url('images/image-2.jpg');
+    background-repeat: no-repeat;
+    background-size: 144px 240px;
+    position: relative;
+    width: 144px;
+    height: 240px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 0 3px;
+}
+.crear-historia p{
+    color: #fff;
+    position: absolute;
+    bottom: 10px;
+    left: 10%;
+}
+.diana-ordoñez{
+    background-image: url('images/image-3.jpg');
+    background-repeat: no-repeat;
+    background-size: 144px 240px;
+    width: 144px;
+    height: 240px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 0 3px;
+}
+.diana-ordoñez p{
+    color: #fff;
+    position: absolute;
+    bottom: 10px;
+    left: 10%;
+}
+.adriana-mishell{
+    background-image: url('images/image-4.jpg');
+    background-repeat: no-repeat;
+    background-size: 144px 240px;
+    width: 144px;
+    height: 240px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 0 3px;
+}
+.adriana-mishell p{
+    color: #fff;
+    position: absolute;
+    bottom: 10px;
+    left: 10%;
+}
+.lucero-maribel{
+    background-image: url('images/image-5.jpg');
+    background-repeat: no-repeat;
+    background-size: 144px 240px;
+    width: 144px;
+    height: 240px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 0 3px;
+}
+.lucero-maribel p{
+    color: #fff;
+    position: absolute;
+    bottom: 10px;
+    left: 10%;
+}
+.publicacion{
+    background-color:#fff;
+    width: 65%;
+    height: 12%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    margin: 20px;
+    border-radius: 14px;
+}
+.que-piensas{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.que-piensas img{
+    border-radius: 20px;
+    margin: 4px;
+}
+.que-piensas p{
+    width: 90%;
+    border: solid #E9EBEE 2px;
+    border-radius: 20px;
+    background-color: #E9EBEE;
+    color: #666666;
+    font-size: 17px;
+    padding: 7px;
+
+}
+.opciones{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #666666;
+    font-weight: 550;
+}
+.video{
+    display: flex;
+    flex-direction: row;
+}
+.video p, i{
+    margin: 2px;
+}
+#video{
+    color: red;
+}
+.camara{
+    display: flex;
+    flex-direction: row;
+}
+.camara p, i{
+    margin: 2px;
+}
+#camara{
+    color: green;
+}
+.sentimiento{
+    display: flex;
+    flex-direction: row;
+}
+.sentimiento p, i{
+    margin: 2px;
+}
+#sentimiento{
+    color: #FFD700;
+}
+.post{
+    width: 65%;
+    height: 700px;
+    background-color: #fff;
+    border-radius: 14px;
+}
+.post img{
+    width: 100%;
+}
+.seccion-3{
+    width: 22%;
+    height: 650px;
+    overflow: hidden;
+    background-color:#E9EBEE;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    position: fixed;
+    margin-top: 56px;
+    margin-left: 78%;
+}
+.seccion-3:hover{
+    overflow: auto;
+}
+.seccion-3 p, a{
+    color: #000;
+}
+.perfiles{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 7px;
+}
+.perfiles p{
+    color: #666666;
+    font-weight: bold;
+}
+.cumpleaños{
+    margin: 10px;
+    border-top: solid 1px #666666;
+    padding-top: 5px;
+}
+.cumpleaños p{
+    margin:10px 0;
+    color: #666666;
+    font-weight: bold;
+}
+.cumpleaños i{
+    color: #2777B5;
+}
+.cumpleaños a{
+    color: #000;
+}
+.contactos{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.contactos p, a{
+    margin: 10px;
+    text-decoration: none;
+}
+.contactos-title{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.contactos-title p{
+    color: #666666;
+    font-weight: bold;
+}
+.contactos-title i{
+    color: #666666;
+}
+.user{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 46px;
+    justify-content: left;
+    background-color: #E9EBEE;
+}
+.user a{
+    margin: 5px;
+    font-weight: bold;
+}
+.user i{
+    font-size: 19px;
+}
+
+@media (max-width:1200px) {
+    .contenedor-hijo-1 input{
+        width: 11%;
+        height: 35px;
+        border-radius: 20px;
+        padding-left: 30px;
+        font-size: 16px;
+        background-color: #E9EBEE;
+        border: solid #E9EBEE 1px;
+    }
+    .contenedor-hijo-2{
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        background-color:#FFF;
+        position: fixed;
+        margin-left: 24%;
+    }
+    .contenedor-hijo-2 i{
+        font-size:22px;
+        cursor: pointer;
+        color: #666666;
+        padding: 10px 35px;
+    }
+    .publicacion{
+        font-size: 15px;
+    }
+    .opciones div{
+        display: flex;
+        justify-content: center;
+    }
+    .opciones div p{
+        margin:0 4px
+    }
+    .opciones p{
+        margin: 0 15px;
+    }
+}
+
+@media (max-width:1117px) {
+    .sentimiento{
+        display: none;
+    }
+    .contenedor-hijo-2 i{
+        font-size:22px;
+        cursor: pointer;
+        color: #666666;
+        padding: 10px 25px;
+    }
+
+}
+
+@media (max-width: 1099px) {
+    .contenedor-hijo-2 i{
+        font-size:22px;
+        cursor: pointer;
+        color: #666666;
+        padding: 10px 20px;
+    }
+    .seccion-1{
+        display: none;
+        margin-left: 0;
+    }
+    .seccion-2{
+        width: 78%;
+        margin-left: 0;
+        justify-content: center;
+        background-color: #E9EBEE;
+    }
+    .seccion-2-hija{
+        justify-content: center;
+    }
+    .publicacion{
+        background-color:#fff;
+        width: 65%;
+        height: 12%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        margin: 20px;
+        border-radius: 14px;
+    }
+    .seccion-3{
+        width:24%;
+    }
+}
+
+@media (max-width: 899px) {
+    .seccion-3{
+        display: none;
+    }
+    .seccion-2{
+        width: 100%;
+        background-color:#E9EBEE;
+    }
+    .publicacion{
+        width: 60%;
+        height: 12%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        margin: 25px;
+        border-radius: 14px;
+    }
+    .seccion-2-hija{
+        overflow: hidden;
+    }
+    .contenedor-hijo-1 input{
+        width: 11%;
+        height: 35px;
+        border-radius: 20px;
+        padding-left: 30px;
+        font-size: 16px;
+        background-color: #E9EBEE;
+        border: solid #E9EBEE 1px;
+    }
+    .contenedor-hijo-2 i{
+        font-size:22px;
+        cursor: pointer;
+        color: #666666;
+        padding: 10px 22px;
+    }
+    .contenedor-hijo-2{
+        display: none;
+    }
+    .contenedor-hijo-3{
+        background-color: #fff;
+        width: 40%;
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        padding: 0 15px;
+        position: fixed;
+        margin-left: 60%;
+    }
+    .crear-historia p{
+        bottom: 18px;
+        left: 20%;
+    }
+    .diana-ordoñez p{
+        bottom: 18px;
+        left: 16%;
+    }
+    .adriana-mishell p{
+        bottom: 18px;
+        left: 28%;
+    }
+    .lucero-maribel p{
+        bottom: 18px;
+        left: 16%;
+    }
+}
+@media (max-width:720px) {
+    .crear-historia{
+        background-size: 120px 220px;
+        width: 120px;
+        height: 220px;
+        margin: 0 1px;
+    }
+    .crear-historia p{
+        color: #fff;
+        position: absolute;
+        bottom: 10px;
+        left: 25%;
+    }
+    .diana-ordoñez{
+        background-size: 120px 220px;
+        width: 120px;
+        height: 220px;
+        position: relative;
+        margin: 0 1px;
+    }
+    .diana-ordoñez p{
+        position: absolute;
+        bottom: 10px;
+        left: 25%;
+    }
+    .adriana-mishell{
+        background-size: 120px 220px;
+        width: 120px;
+        height: 220px;
+        position: relative;
+        margin: 0 1px;
+    }
+    .adriana-mishell p{
+        position: absolute;
+        bottom: 10px;
+        left: 25%;
+    }
+    .lucero-maribel{
+        background-size: 120px 220px;
+        width: 120px;
+        height: 220px;
+        position: relative;
+        margin: 0 1px;
+    }
+    .lucero-maribel p{
+        position: absolute;
+        bottom: 10px;
+        left: 25%;
+    }
+    .seccion-2{
+        overflow: hidden;
+    }
+    .video p, #video{
+        display: none;
+    }
+}
+
+
+@media (max-width:480px) {
+    .seccion-2{
+        padding-top: 4px;
+    }
+    .crear-historia{
+        background-size: 91px 200px;
+        width: 91px;
+        height: 200px;
+        margin: 0 1px;
+    }
+    .crear-historia p{
+        color: #fff;
+        position: absolute;
+        bottom: 10px;
+        left: 25%;
+        font-size: 13px;
+    }
+    .diana-ordoñez{
+        background-size: 91px 200px;
+        width: 91px;
+        height: 200px;
+        position: relative;
+        margin: 0 1px;
+    }
+    .diana-ordoñez p{
+        position: absolute;
+        bottom: 10px;
+        left: 25%;
+        font-size: 13px;
+    }
+    .adriana-mishell{
+        background-size: 91px 200px;
+        width: 91px;
+        height: 200px;
+        position: relative;
+        margin: 0 1px;
+    }
+    .adriana-mishell p{
+        position: absolute;
+        bottom: 10px;
+        left: 25%;
+        font-size: 13px;
+    }
+    .lucero-maribel{
+        background-size: 91px 200px;
+        width: 91px;
+        height: 200px;
+        position: relative;
+        margin: 0 1px;
+    }
+    .lucero-maribel p{
+        position: absolute;
+        bottom: 10px;
+        left: 25%;
+        font-size: 13px;
+    }
+    .seccion-2{
+        overflow: hidden;
+    }
+    .publicacion{
+        background-color:#fff;
+        width: 80%;
+        height: 5%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+        margin: 20px;
+        border-radius: 14px;
+    }
+    .que-piensas{
+        width: 60%;
+        height: 80%;
+        display: flex;
+        flex-direction: row;
+    }
+    .que-piensas img{
+        border-radius: 20px;
+        margin: 4px;
+    }
+    .que-piensas p{
+        width: 85%;
+        border: solid #E9EBEE 1px;
+        border-radius: 10px;
+        background-color: #E9EBEE;
+        color: #666666;
+        font-size: 13px;
+        padding: 4px;
+    }
+    .opciones{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        color: #666666;
+        font-weight: 300;
+    }
+    .opciones p{
+        font-size: 13px;
+    }
+    .video p, #video{
+        display: none;
+    }
+    .sentimiento p, #sentimiento{ 
+        display: none;
+    }
+}
+
+
+
+
+
+
+
